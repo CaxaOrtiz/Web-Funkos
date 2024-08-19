@@ -1,0 +1,131 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    background-color: #f8f9fa; /* Color de fondo */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #343a40; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex; /* Flexbox para alinear el logo y el título */
+    align-items: center; /* Alinea el contenido verticalmente */
+}
+
+header .logo {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: 50px;
+    margin-right: 15px; /* Espaciado entre el logo y el título */
+}
+
+header h1 {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    font-size: 24px; /* Tamaño del título */
+    text-align: left; /* Alineación del texto */
+}
+
+/* Estilos para las pestañas de navegación */
+.tabs {
+    display: flex; /* Utiliza flexbox para el diseño */
+    background-color: #343a40; /* Color de fondo */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.tab {
+    padding: 15px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor a mano */
+    color: white; /* Color del texto */
+}
+
+.tab:hover, .tab.active {
+    background-color: #495057; /* Color de fondo al pasar el ratón o activo */
+}
+
+/* Estilos específicos para h1 con esta clase */
+.sub-titulos {
+    color: white;
+    background-color: #495057;
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Estilos para el contenido de las pestañas */
+.content {
+    display: none; /* Oculta el contenido por defecto */
+    padding: 20px; /* Espaciado interno */
+}
+
+.content.active {
+    display: block; /* Muestra el contenido activo */
+}
+
+/* Estilos para el iframe */
+iframe {
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    border: none; /* Sin borde */
+}
+
+/* Estilos para el contenedor de productos */
+.container {
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-wrap: wrap; /* Envuelve los elementos en múltiples líneas */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para el contenedor de productos */
+.container1 {
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-wrap: wrap; /* Envuelve los elementos en múltiples líneas */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para las tarjetas de productos */
+.product-card {
+    background-color: white; /* Color de fondo */
+    border: 1px solid #dee2e6; /* Borde */
+    border-radius: 5px; /* Radio de borde */
+    margin: 10px; /* Márgenes externos */
+    padding: 15px; /* Espaciado interno */
+    width: 300px; /* Ancho fijo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.2s; /* Transición al hacer hover */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Escalado al hacer hover */
+}
+
+/* Estilos para la imagen del producto */
+.product-image {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    border-bottom: 1px solid #dee2e6; /* Borde inferior */
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilos para los detalles del producto */
+.product-details {
+    text-align: center; /* Alineación del texto */
+}
+
+.product-name {
+    font-size: 1.2em; /* Tamaño de fuente */
+    margin: 10px 0; /* Márgenes */
+}
+
+.product-price {
+    color: #28a745; /* Color del texto */
+    font-size: 1.1em; /* Tamaño de fuente */
+    margin: 5px 0; /* Márgenes */
+}
+
+.product-description {
+    color: #6c757d; /* Color del texto */
+    font-size: 0.9em; /* Tamaño de fuente */
+}

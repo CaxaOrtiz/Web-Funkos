@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Definición de la codificación de caracteres y la configuración de la vista para dispositivos móviles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Catálogo de Productos</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Imagen del logo de la empresa -->
+        <img src="images/logo.png" alt="Logo de la empresa" class="logo">
+        <!-- Título principal de la página -->
+        <h1>Catálogo de Productos</h1>
+    </header>
+    
+    <!-- Contenedor de las pestañas de navegación -->
+    <div class="tabs">
+        <!-- Pestañas para diferentes categorías con eventos de clic para cambiar el contenido -->
+        <div class="tab" onclick="openTab('Artistas')">Artistas</div>
+        <div class="tab" onclick="openTab('Caricaturas')">Caricaturas</div>
+        <div class="tab" onclick="openTab('Deportes')">Deportes</div>
+        <div class="tab" onclick="openTab('Disney')">Disney</div>
+        <div class="tab" onclick="openTab('Marvel')">Marvel</div>
+        <div class="tab" onclick="openTab('Pixar')">Pixar</div>
+        <div class="tab" onclick="openTab('Pokemon')">Pokemon</div>
+        <div class="tab" onclick="openTab('Power Rangers')">Power Rangers</div>
+        <div class="tab" onclick="openTab('Series y Peliculas')">Series y Películas</div>
+        <div class="tab" onclick="openTab('Star Wars')">Star Wars</div>
+        <div class="tab" onclick="openTab('The Boys')">The Boys</div>
+        <div class="tab" onclick="openTab('Varios')">Varios</div>
+    </div>
+    
+    <!-- Contenidos correspondientes a cada pestaña -->
+<div id="Artistas" class="content active" style="height: 700px;">
+    <!-- Iframe para mostrar el contenido de la pestaña "Artistas" -->
+    <iframe src="Artistas.html" frameborder="0"></iframe>
+</div>
+<div id="Caricaturas" class="content" style="height: 700px;">
+    <!-- Iframe para mostrar el contenido de la pestaña "Caricaturas" -->
+    <iframe src="Caricaturas.html" frameborder="0"></iframe>
+</div>
+<div id="Deportes" class="content" style="height: 700px;">
+    <!-- Iframe para mostrar el contenido de la pestaña "Deportes" -->
+    <iframe src="Deportes.html" frameborder="0"></iframe>
+</div>
+<div id="Disney" class="content" style="height: 700px;">
+    <!-- Iframe para mostrar el contenido de la pestaña "Disney" -->
+    <iframe src="Disney.html" frameborder="0"></iframe>
+</div>
+<div id="Marvel" class="content" style="height: 700px;">
+    <!-- Iframe para mostrar el contenido de la pestaña "Marvel" -->
+    <iframe src="Marvel.html" frameborder="0"></iframe>
+</div>
+<div id="Pixar" class="content" style="height: 700px;">
+    <!-- Iframe para mostrar el contenido de la pestaña "Pixar" -->
+    <iframe src="Pixar.html" frameborder="0"></iframe>
+</div>
+<div id="Pokemon" class="content" style="height: 700px;">
+    <!-- Iframe para mostrar el contenido de la pestaña "Pokemon" -->
+    <iframe src="Pokemon.html" frameborder="0"></iframe>
+</div>
+<div id="Power Rangers" class="content" style="height: 700px;">
+    <!-- Iframe para mostrar el contenido de la pestaña "Power Rangers" -->
+    <iframe src="Power Rangers.html" frameborder="0"></iframe>
+</div>
+<div id="Series y Peliculas" class="content" style="height: 700px;">
+    <!-- Iframe para mostrar el contenido de la pestaña "Series y Películas" -->
+    <iframe src="Series y Peliculas.html" frameborder="0"></iframe>
+</div>
+<div id="Star Wars" class="content" style="height: 700px;">
+    <!-- Iframe para mostrar el contenido de la pestaña "Star Wars" -->
+    <iframe src="Star Wars.html" frameborder="0"></iframe>
+</div>
+<div id="The Boys" class="content" style="height: 700px;">
+    <!-- Iframe para mostrar el contenido de la pestaña "The Boys" -->
+    <iframe src="The Boys.html" frameborder="0"></iframe>
+</div>
+<div id="Varios" class="content" style="height: 700px;">
+    <!-- Iframe para mostrar el contenido de la pestaña "Varios" -->
+    <iframe src="Varios.html" frameborder="0"></iframe>
+</div>
+
+    <!-- Script para manejar el cambio de pestañas -->
+    <script>
+        function openTab(tabId) {
+            // Obtiene todas las pestañas y el contenido
+            var tabs = document.getElementsByClassName('tab');
+            var contents = document.getElementsByClassName('content');
+            
+            // Elimina la clase "active" de todas las pestañas
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+            
+            // Elimina la clase "active" de todo el contenido
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active');
+            }
+            
+            // Agrega la clase "active" al contenido de la pestaña seleccionada
+            document.getElementById(tabId).classList.add('active');
+            // Agrega la clase "active" a la pestaña seleccionada
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
